@@ -1,0 +1,212 @@
+#include <stdio.h>
+
+int main() {
+    char name[50];
+    int phone_number;
+    int customer_id;
+
+    int body_soap;
+    int body_spray;
+    int hair_gel;
+    int shampoo;
+
+    int sugar;
+    int tea;
+    int coffee;
+    int rice;
+    int wheet;
+
+    int pepsi;
+    int coke;
+    int fanta;
+    int badam_milk;
+    int thumbs_up;
+
+    int total;
+    int cosmetics_total;
+    int grocries_total;
+    int beverages_total;
+
+    printf("------------\n");
+    printf("BILLING SYSTEM\n");
+    printf("------------\n");
+    printf("CUSTOMER DETAILS\n\n");
+
+    printf("Customer Name : ");
+    scanf("%s", &name);
+    printf("Customer Number : ");
+    scanf("%d", &phone_number);
+    printf("Customer ID : ");
+    scanf("%d", &customer_id);
+    
+    printf("------------\n");
+
+    printf("COSMETICS\n\n");
+
+    printf("Body Soap (RS 20) : ");
+    scanf("%d", &body_soap);
+    printf("Body Spray (RS 75) : ");
+    scanf("%d", &body_spray);
+    printf("Hair gel (RS 50) : ");
+    scanf("%d", &hair_gel);
+    printf("Shampoo (RS 100) : ");
+    scanf("%d", &shampoo);
+
+    printf("------------\n");
+
+    printf("GROCERIES\n\n");
+
+    printf("Sugar (RS 50) : ");
+    scanf("%d", &sugar);
+    printf("Tea (RS 50) : ");
+    scanf("%d", &tea);
+    printf("Coffee (RS 20) : ");
+    scanf("%d", &coffee);
+    printf("Rice (Rs 200) : ");
+    scanf("%d", &rice);
+    printf("Wheet (RS 150) : ");
+    scanf("%d", &wheet);
+
+    printf("------------\n");
+
+    printf("BEVERAGES\n\n");
+
+    printf("Pepsi (RS 40) : ");
+    scanf("%d", &pepsi);
+    printf("Coke (RS 40) : ");
+    scanf("%d", &coke);
+    printf("Fanta (RS 35) : ");
+    scanf("%d", &fanta);
+    printf("Badam Milk (RS 30) : ");
+    scanf("%d", &badam_milk);
+    printf("Thums Up (RS 40) : ");
+    scanf("%d", &thumbs_up);
+
+    printf("------------\n");
+
+    int boso;
+    int bosp;
+    int hg;
+    int sh;
+
+    boso = 20 * body_soap;
+    bosp = 75 * body_spray;
+    hg = 50 * hair_gel;
+    sh = 100 * shampoo;
+    cosmetics_total = boso + bosp + hg + sh;
+
+    printf("Body Soap : ");
+    printf("%d RS\n", boso);
+    printf("Body Spray : ");
+    printf("%d RS\n", bosp);
+    printf("Hair Gel : ");
+    printf("%d RS\n", hg);
+    printf("Shampoo : ");
+    printf("%d RS\n", sh);
+    printf("Total Cosmetic Price : ");
+    printf("%d RS\n", cosmetics_total);
+
+    printf("------------\n");
+
+    int s;
+    int t;
+    int c;
+    int r;
+    int w;
+
+    s = 50 * sugar;
+    t = 50 * tea;
+    c = 20 * coffee;
+    r = 200 * rice;
+    w = 150 * wheet;
+    grocries_total = s + t + c + r + w;
+
+    printf("Sugar : ");
+    printf("%d RS\n", s);
+    printf("Tea : ");
+    printf("%d RS\n", t);
+    printf("Coffee : ");
+    printf("%d RS\n", c);
+    printf("Rice : ");
+    printf("%d RS\n", r);
+    printf("Wheet : ");
+    printf("%d RS\n", w);
+    printf("Total Groceries Price : ");
+    printf("%d RS\n", grocries_total);
+
+    printf("------------\n");
+
+    int p;
+    int co;
+    int f;
+    int b;
+    int th;
+
+    p = 40 * pepsi;
+    co = 40 * coke;
+    f = 35 * fanta;
+    b = 30 * badam_milk;
+    th = 40 * thumbs_up;
+    beverages_total = p + co + f + b + th;
+
+    printf("Pepsi : ");
+    printf("%d RS\n", p);
+    printf("Coke : ");
+    printf("%d RS\n", co);
+    printf("Fanta : ");
+    printf("%d RS\n", f);
+    printf("Badam Milk : ");
+    printf("%d RS\n", b);
+    printf("Thumbs up : ");
+    printf("%d RS\n", th);
+    printf("Total Beverages Price : ");
+    printf("%d RS\n", beverages_total);
+
+    printf("------------\n");
+
+    total = cosmetics_total + grocries_total + beverages_total;
+
+    printf("Total Amount : ");
+    printf("%d RS\n", total);
+
+    printf("------------\n");
+
+    printf("------------------------\n");
+
+    printf("SH Super market\n\n");
+
+   printf("Customer Name : ");
+   printf("%s\n", name);
+   printf("Customer Phone Number : ");
+   printf("%d\n", phone_number);
+   printf("Customer ID : ");
+   printf("%d\n", customer_id);
+
+   printf("Product Name                                                   Quantity                                                                price\n\n");
+   printf("Body Soap                                                      %d                                                                      %d\n", body_soap,boso);
+   printf("Body Spray                                                     %d                                                                      %d\n", body_spray,bosp);
+   printf("Hair Gel                                                       %d                                                                      %d\n", hair_gel,hg);
+   printf("Shampoo                                                        %d                                                                      %d\n", shampoo,sh);
+   printf("Sugar                                                          %d                                                                      %d\n", sugar,s);
+   printf("Tea                                                            %d                                                                      %d\n",tea,t);
+   printf("Coffee                                                         %d                                                                      %d\n", coffee,c);
+   printf("Rice                                                           %d                                                                      %d\n", rice,r);
+   printf("Wheet                                                          %d                                                                      %d\n", wheet,w);
+   printf("Pepsi                                                          %d                                                                      %d\n", pepsi,p);
+   printf("Coke                                                           %d                                                                      %d\n", coke,co);
+   printf("Fanta                                                          %d                                                                      %d\n", fanta,f);
+   printf("Badam Milk                                                     %d                                                                      %d\n", badam_milk,b);
+   printf("Thumbs up                                                      %d                                                                      %d\n", thumbs_up,th);
+
+   printf("Groceries Total Price : %d\n\n", grocries_total);
+
+   printf("Cosmetics Total Price : %d\n\n", cosmetics_total);
+
+   printf("Beverages Total Price : %d\n\n", beverages_total);
+
+   printf("Total Price : %d\n\n", total);
+
+   printf("------------------------------------\n");
+
+   return 0;
+}
